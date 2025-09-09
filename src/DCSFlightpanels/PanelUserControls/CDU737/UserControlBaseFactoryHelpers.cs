@@ -50,6 +50,12 @@ namespace DCSFlightpanels.PanelUserControls.CDU737
                     control.Init();
                     return control;
                 }
+                if (DCSAircraft.IsCH47(profile))
+                {
+                    var control = new Cdu737UserControlCH47(hidSkeleton);
+                    control.Init();
+                    return control;
+                }
             }
 
             return null;
