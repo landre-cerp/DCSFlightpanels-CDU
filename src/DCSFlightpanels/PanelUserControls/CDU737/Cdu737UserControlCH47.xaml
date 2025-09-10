@@ -11,21 +11,17 @@
         d:DesignHeight="650" d:DesignWidth="1000">
 
     <StackPanel Orientation="Horizontal">
-        
+
         <customControls:CDU737UserControl x:Name="CDU737UserControl" />
-      
+
         <StackPanel Orientation="Vertical">
 
             <Label Content="CH47 Mappings " FontSize="24" FontWeight="Bold" />
-            <Label Content="Menu buttons are mapped in the same order, as shown on the picture below" FontSize="12" FontWeight="Bold" />
             <Label Content="BRT -/+ are operative - but a bug in DCSBios ATM prevent a correct usage" FontSize="12" FontWeight="Bold" />
+            <Label Content="LSK, RSK mapped as in Aircraft" FontSize="12" FontWeight="Bold" />
+            <Label Content="Prev Page, Next Page are mapped to Up / Down Arrow&#xA;[ INIT REF  , ... , DES ] =&gt; [MSN, ...., DIR]&#xA;SNSR -&gt; Menu , CNI -&gt; DEP ARR , LEGS -&gt; MARK ,&#xD;&#xA;HOLD-&gt;TDL , PROG-&gt; ASE, EXEC-&gt;STAT&#xA;" FontSize="12" FontWeight="Bold" />
+            <Image Source="/Images/CDU737/CH47.png" Stretch="Fill" Height="348" Width="286"/>
 
-            <Image Height="181" Width="372" Source="/Images/CDU737/mappingmenukey.jpg"/>
-            <Label Content="LSK means Left Shift Key, key on the left, numbered from top to bottom" FontSize="12" FontWeight="Bold" />
-            <Label Content="LSK 5 and LSK 6 are mapped to P/G" FontSize="12" FontWeight="Bold" />
-            <Label Content="Prev Page, Next Page are mapped to P/G" FontSize="12" FontWeight="Bold" />
-            <Label Content="RSK 5 and RSK 6 are mapped to +/- RockerSwitch" FontSize="12" FontWeight="Bold" />
-            <Label Content="FIX is mapped to MK" FontSize="12" FontWeight="Bold" />
 
         </StackPanel>
     </StackPanel>
